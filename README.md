@@ -8,9 +8,9 @@ curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh|bas
 电信目标IP：
 
 #深圳电信：
-./besttrace 119.147.70.1
+./besttrace 58.60.188.222
 
-mtr -c 100 --report 119.147.70.1
+mtr -c 100 --report 58.60.188.222
 
 #上海电信：
 ./besttrace 202.96.209.133
