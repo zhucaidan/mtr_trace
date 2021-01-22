@@ -6,8 +6,7 @@ iplocal=(北京电信 北京联通 北京移动 上海电信 上海联通 上海
 echo "开始安装mtr命令..."
 yum -y install mtr
 clear
-echo -e "\n主机资讯 | www.zhujizixun.com"
-echo -e "\n主机资讯提醒您: 正在测试,请骚等..."
+echo -e "\n主机资讯提醒您: 正在测试,请稍等..."
 echo -e "——————————————————————————————\n"
 for i in {0..8}; do
 	mtr -r --n --tcp ${iplise[i]} > /root/traceroute_testlog
@@ -55,4 +54,4 @@ for i in {0..8}; do
 echo 
 done
 rm -f /root/traceroute_testlog
-echo -e "\n——————————————————————————————\n主机资讯提醒您: 本脚本测试结果为TCP回程路由,非ICMP回程路由 仅供参考 谢谢\n"
+echo -e "\n——————————————————————————————\n本脚本测试结果为TCP回程路由,非ICMP回程路由 仅供参考 谢谢\n"
