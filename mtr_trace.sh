@@ -5,7 +5,7 @@ iplise=(219.141.136.12 202.106.50.1 221.179.155.161 202.96.209.133 210.22.97.1 2
 iplocal=(北京电信 北京联通 北京移动 上海电信 上海联通 上海移动 深圳电信 深圳联通 深圳移动)
 echo "开始安装mtr命令..."
 apt-get update && apt-get install mtr -y
-yum update && yum install mtr -y
+yum update -y && yum install mtr -y
 clear
 echo -e "\n正在测试,请稍等..."
 echo -e "——————————————————————————————\n"
